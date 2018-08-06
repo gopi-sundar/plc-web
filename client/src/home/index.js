@@ -22,5 +22,5 @@ $(document).ready(() => {
 
 if (module.hot) {
   module.hot.accept();
-  module.hot.dispose(() => {});
+  module.hot.dispose(() => { });
 }

@@ -142,6 +142,7 @@ const serverConfig = {
     new HtmlWebpackPlugin({
       vendorFileName: '/vendor.js',
       homeBundleFileName: '/homeBundle.js',
+      adminLteFileName: '/node_modules/admin-lte/dist/css/AdminLTE.css',
       filename: 'views/layouts/homeLayout.hbs',
       template: './server/views/layouts/homeLayout.hbs',
       chunks: []

@@ -59,6 +59,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       vendorFileName: 'http://localhost:3001/vendor.js',
       homeBundleFileName: 'http://localhost:3001/homeBundle.js',
+      adminLteFileName: 'http://localhost:3001/node_modules/admin-lte/dist/css/AdminLTE.css',
       filename: 'views/layouts/homeLayout.hbs',
       template: './server/views/layouts/homeLayout.hbs',
       chunks: []
