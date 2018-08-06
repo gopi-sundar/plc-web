@@ -1,0 +1,15 @@
+{
+    "ldapConfig" : {
+        "host": "auth-server",
+        "port": 389          
+    },
+    "dbConfig": {
+      "host": "localhost",
+      "port": 5984,
+      "dbName": "customers"
+    },
+    "credit": {
+      "initialLimit": 100,
+      "initialDays": 1
+    }
+  }

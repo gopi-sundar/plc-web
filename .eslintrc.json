@@ -1,0 +1,18 @@
+{
+    "rules": {
+        "comma-dangle": [
+            "error",
+            "only-multiline"
+        ],
+        "linebreak-style": 0,
+        "no-console": 0,
+        "function-paren-newline": ["error", "consistent"]
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    }, 
+    "extends": [
+        "airbnb-base"
+    ]
+}

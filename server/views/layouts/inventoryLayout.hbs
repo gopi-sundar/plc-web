@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    <div id="app-main">
+        {{{body}}}
+    </div>
+    <script type="text/javascript" src=<%=JSON.stringify(htmlWebpackPlugin.options.vendorFileName) %>></script>
+    <script type="text/javascript" src=<%=JSON.stringify(htmlWebpackPlugin.options.inventoryBundleFileName) %></script>></script>
+</body>
+
+</html>
