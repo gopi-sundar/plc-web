@@ -19,19 +19,7 @@ module.exports = {
       //'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
       'webpack-dev-server/client?http://localhost:3001',
       'webpack/hot/only-dev-server',
-      './client/src/home/index.js'
-    ],
-    inventoryBundle: [
-      //'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
-      'webpack-dev-server/client?http://localhost:3001',
-      'webpack/hot/only-dev-server',
-      './client/src/inventory/index.js'
-    ],
-    warehouseBundle: [
-      //'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
-      'webpack-dev-server/client?http://localhost:3001',
-      'webpack/hot/only-dev-server',
-      './client/src/warehouse/index.js'
+      './client/src/index.js'
     ],
     vendor: VENDOR_LIBS
   },

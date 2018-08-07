@@ -16,9 +16,7 @@ const clientConfig = {
   name: 'client',
   target: 'web',
   entry: {
-    homeBundle: ['./client/src/home/index.js'],
-    inventoryBundle: ['./client/src/inventory/index.js'],
-    warehouseBundle: ['./client/src/warehouse/index.js'],
+    homeBundle: ['./client/src/index.js'],
     vendor: VENDOR_LIBS
   },
   output: {

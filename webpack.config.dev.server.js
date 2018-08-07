@@ -72,20 +72,6 @@ module.exports = {
       template: './server/views/layouts/homeLayout.hbs',
       chunks: []
     }),
-    new HtmlWebpackPlugin({
-      vendorFileName: 'http://localhost:3001/vendor.js',
-      inventoryBundleFileName: 'http://localhost:3001/inventoryBundle.js',
-      filename: 'views/layouts/inventoryLayout.hbs',
-      template: './server/views/layouts/inventoryLayout.hbs',
-      chunks: []
-    }),
-    new HtmlWebpackPlugin({
-      vendorFileName: 'http://localhost:3001/vendor.js',
-      warehouseBundleFileName: 'http://localhost:3001/warehouseBundle.js',
-      filename: 'views/layouts/warehouseLayout.hbs',
-      template: './server/views/layouts/warehouseLayout.hbs',
-      chunks: []
-    }),
     new MergeJsonWebpackPlugin({
       debug: true,
       files: ['./config/common.json', './config/development.json'],

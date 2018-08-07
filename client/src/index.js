@@ -3,8 +3,8 @@ import $ from 'jquery';
 
 import { printHome, HomeViewModel } from './homeScreen';
 import { printHome1, Home1ViewModel } from './homeScreen1';
-import '../../style/common.scss';
-import '../../style/home.scss';
+import '../style/common.scss';
+import '../style/home.scss';
 
 // Ensures sub-modules are loaded fine
 printHome();
