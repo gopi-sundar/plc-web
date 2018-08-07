@@ -1,19 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html style="height: auto; min-height: 100%;">
 
 <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>{{ title }}</title>
 
-    <link rel="stylesheet" href=<%=JSON.stringify(htmlWebpackPlugin.options.adminLteFileName) %>>
+    <link rel="stylesheet" href=<%=JSON.stringify(htmlWebpackPlugin.options.adminLteCss) %>>
+    <link rel="stylesheet" href=<%=JSON.stringify(htmlWebpackPlugin.options.adminLteAllSkinsCss) %>>
+    <link rel="stylesheet" href=<%=JSON.stringify(htmlWebpackPlugin.options.bootstrapCSS) %>>
+    <link rel="stylesheet" href=<%=JSON.stringify(htmlWebpackPlugin.options.fontAwesomeCSS) %>>
+
 </head>
 
-<body>
-    <div id="app-main">
-        {{{body}}}
+<body class="skin-blue sidebar-mini fixed" style="height: auto; min-height: 100%;">
+    <div class="wrapper" style="height: auto; min-height: 100%;">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">
+                    <b>PLC</b>
+                </span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">
+                    <b>Arwizon PLC</b>
+                </span>
+            </a>
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar" style="height: auto;">
+                <ul class="sidebar-menu tree" data-widget="tree">
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Product Costing</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            </section>
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 1100px;">
+
+            {{{body}}}
+        </div>
+
     </div>
+    <script type="text/javascript" src=<%=JSON.stringify(htmlWebpackPlugin.options.jqueryJS) %>></script>
+    <script type="text/javascript" src=<%=JSON.stringify(htmlWebpackPlugin.options.jquerySlimscrollJs) %>></script>
+    <script type="text/javascript" src=<%=JSON.stringify(htmlWebpackPlugin.options.adminLteJs) %>></script>
     <script type="text/javascript" src=<%=JSON.stringify(htmlWebpackPlugin.options.vendorFileName) %>></script>
     <script type="text/javascript" src=<%=JSON.stringify(htmlWebpackPlugin.options.homeBundleFileName) %></script>></script>
+    <script type="text/javascript" src=<%=JSON.stringify(htmlWebpackPlugin.options.bootstrapJS) %>></script>
+
 </body>
 
 </html>

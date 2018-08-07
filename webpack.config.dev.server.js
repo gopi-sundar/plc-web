@@ -59,7 +59,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       vendorFileName: 'http://localhost:3001/vendor.js',
       homeBundleFileName: 'http://localhost:3001/homeBundle.js',
-      adminLteFileName: 'http://localhost:3001/node_modules/admin-lte/dist/css/AdminLTE.css',
+      adminLteCss: 'http://localhost:3001/node_modules/admin-lte/dist/css/AdminLTE.min.css',
+      adminLteJs: 'http://localhost:3001/node_modules/admin-lte/dist/js/adminlte.min.js',
+      adminLteAllSkinsCss: 'http://localhost:3001/node_modules/admin-lte/dist/css/skins/_all-skins.css',
+      bootstrapCSS: 'http://localhost:3001/node_modules/bootstrap/dist/css/bootstrap.min.css',
+      fontAwesomeCSS: 'http://localhost:3001/node_modules/font-awesome/css/font-awesome.min.css',
+      bootstrapJS: 'http://localhost:3001/node_modules/bootstrap/dist/js/bootstrap.min.js',
+      jqueryJS: 'http://localhost:3001/node_modules/jquery/dist/jquery.min.js',
+      jquerySlimscrollJs: 'http://localhost:3001/node_modules/jquery-slimscroll/jquery.slimscroll.min.js',
+      fastclickJs: 'http://localhost:3001/node_modules/fastclick/lib/fastclick.js',
       filename: 'views/layouts/homeLayout.hbs',
       template: './server/views/layouts/homeLayout.hbs',
       chunks: []

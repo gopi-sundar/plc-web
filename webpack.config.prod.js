@@ -142,7 +142,15 @@ const serverConfig = {
     new HtmlWebpackPlugin({
       vendorFileName: '/vendor.js',
       homeBundleFileName: '/homeBundle.js',
-      adminLteFileName: '/node_modules/admin-lte/dist/css/AdminLTE.css',
+      adminLteCss: '/node_modules/admin-lte/dist/css/AdminLTE.min.css',
+      adminLteJs: '/node_modules/admin-lte/dist/js/adminlte.min.js',
+      adminLteAllSkinsCss: '/node_modules/admin-lte/dist/css/skins/_all-skins.css',
+      bootstrapCSS: '/node_modules/bootstrap/dist/css/bootstrap.min.css',
+      fontAwesomeCSS: '/node_modules/font-awesome/css/font-awesome.min.css',
+      bootstrapJS: '/node_modules/bootstrap/dist/js/bootstrap.min.js',
+      jqueryJS: '/node_modules/jquery/dist/jquery.min.js',
+      jquerySlimscrollJs: '/node_modules/jquery-slimscroll/jquery.slimscroll.min.js',
+      fastclickJs: '/node_modules/fastclick/lib/fastclick.js',
       filename: 'views/layouts/homeLayout.hbs',
       template: './server/views/layouts/homeLayout.hbs',
       chunks: []
